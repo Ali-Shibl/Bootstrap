@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 20px;
+    /*
+1rem=20px
+*/
+}
+
+body {
+    font-family: 'Charm', cursive;
+    font-family: 'Fondamento', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Merienda', cursive;
+    font-family: 'Montaga', serif;
+    font-family: 'Quintessential', serif;
+}
+
+:root {
+    --text-color: rgb(233, 233, 233);
+    --sec-color: rgb(50, 186, 201);
+    --main-color: rgb(41, 45, 79);
+
+}
+
+.text-gray {
+    color: var(--text-color);
+}
+
+.bac-logo {
+    background-color: var(--sec-color);
+}
+
+.text-main {
+    background-color: var(--main-color);
+}
+
+.text-color {
+    color: var(--sec-color);
+}
+
+.text-blue {
+    color: var(--main-color);
+
+}
+
+/*start navbar*/
+.logo {
+    width: 40px;
+}
+
+.navbar .navbar-nav .nav-link.active{
+    color: aliceblue;
+}
+.navbar .navbar-nav .nav-link:focus{
+    color: var(--sec-color);
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: lavender;
+}
+
+.search {
+    position: relative;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: aliceblue;
+
+}
+
+.navbar .navbar-toggler:focus {
+
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--sec-color) !important;
+
+}
+.navbar li{
+    width: fit-content;
+}
+.navbar li::after{transition: 1s;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    width: 0%;
+    height: 3px;
+}
+.navbar li:hover::after{
+    width: 100%;
+}
+
+
+/*end navbar*/
+
+/*start header*/
+header {
+    background-image: url(../images/240_F_290146056_4MJHn0yxb5nfv52L2Fj4IzquucWzAQf5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/*end header*/
+/*start work*/
+.work {
+    background-color: var(--text-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--main-color);
+    background-color: var(--sec-color);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+.nav-link {
+    color: var(--sec-color);
+}
+
+.item>div {
+    position: absolute;
+    bottom: 100%;
+    transition: 1s;
+}
+
+.item:hover>div {
+    bottom: 0;
+}
+
+/*end work*/
+
+/*end stuff*/
+@media (min-width:768px) {
+    .stuff .container>p {
+
+        max-width: 500px;
+    }
+
+    .bord::after {
+        content: "";
+        position: absolute;
+        left: 27px;
+        top: 27px;
+        z-index: -20;
+        width: 100%;
+        height: 100%;
+        border: 10px solid hotpink;
+
+    }
+
+    .bord img {
+        transition: 1s;
+    }
+
+    .bord:hover img {
+        transform: translateY(27px) translateX(27px);
+    }
+}
+
+/*end stuff*/
+/*start team*/
+.our-team {
+    background-color: var(--text-color);
+}
+
+/*end team*/
+/*start Blog */
+.card{
+    margin: 20px 0;
+    height: 230px ;
+    transition: 1s;
+}
+.img3{
+ 
+    top: -70px;
+    z-index: 23;
+}
+
+.card .card-body{
+    color: aliceblue;
+    transition: 1s;
+    transform: translateY(-140px);
+    opacity: 0;
+}
+
+.card:hover .card-body{
+   
+    transform: translateY(-40px);
+    opacity: 1;
+}
+.card:hover{
+    height: 350px;
+}
+@media (max-width:768px) {
+    .img3{
+ 
+        top: -50px;
+        z-index: 23;
+    }
+    
+    .card{
+        margin: 20px 0;
+        height: 200px ;
+       
+    }
+    .card:hover{
+        height: 320px;
+    }
+   }
+@media (max-width:576px) {
+  
+    .img3 img{
+ height: 200px;
+    
+    }
+    
+    .card{
+        margin: 20px 0;
+        height: 200px ;
+       
+    }
+  
+   }
+/*end Blog */
+/*start subscribe*/
+.input:focus {
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.sub {
+    background-color: var(--text-color);
+}
+
+/*end subscribe*/
+/*start footer*/
+footer ul li svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer ul li .facebook {
+    background-color: blue;
+}
+
+footer ul li .instagram {
+    background-color: rgb(195, 35, 131);
+}
+
+footer ul li .linkedin {
+    background-color: rgb(0, 213, 255);
+}
+
+footer ul li .github {
+    background-color: rgb(42, 43, 43);
+}
+
+footer ul li .youtube {
+    background-color: rgb(183, 52, 52);
+}
+
+/*end footer*/
+
